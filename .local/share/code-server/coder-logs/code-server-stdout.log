@@ -1,0 +1,16 @@
+[2025-09-15T10:49:29.344Z] info  code-server 4.23.1 9a28bc29dbddb6886dfe03dc1c31320249a901ce
+[2025-09-15T10:49:29.345Z] info  Using user-data-dir /opt/.katacodacode/user-data
+[2025-09-15T10:49:29.364Z] info  Using config file /root/.config/code-server/config.yaml
+[2025-09-15T10:49:29.364Z] info  HTTP server listening on http://0.0.0.0:23000/
+[2025-09-15T10:49:29.364Z] info    - Authentication is disabled
+[2025-09-15T10:49:29.364Z] info    - Not serving HTTPS
+[2025-09-15T10:49:29.364Z] info  Session server listening on /opt/.katacodacode/user-data/code-server-ipc.sock
+[12:49:32] 
+
+
+
+
+[12:49:32] Extension host agent started.
+[12:50:07] [172.16.16.2][1c64b394][ManagementConnection] New connection established.
+[12:50:11] [172.16.16.3][7624f82d][ExtensionHostConnection] New connection established.
+[12:50:11] [172.16.16.3][7624f82d][ExtensionHostConnection] <2430> Launched Extension Host Process.

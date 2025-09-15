@@ -1,0 +1,27 @@
+name: Install nginx
+on:
+   push: ["main"]
+
+jobs:
+   install-ngnix:
+     runs-on: ubuntu-latest
+      
+     steps: 
+       - name: Checkout repo
+         uses: actions/checkout@v4
+
+       - name: Update Packages
+         run: |
+           echo "Updating packages..."
+           sudo apt-get update -y
+
+       - name: Install ngnix
+         run: |
+           echo "Starting nginx..."
+           sudo systemctl start nginx
+           sudo systemctl enable nginx
+  
+       - name: Verify ngnix status
+         run: |
+          echo "checking ngnix status..."
+          systemctl status ngnix | head -n 10
