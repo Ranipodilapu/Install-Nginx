@@ -29,6 +29,6 @@ jobs:
        - name: Backup nginx
          run: |
            mkdir -p backup
-           sudo tar -cnz backup/ngnix-config.tar.gz /etc/ngnix
+           tar -czvf ~/backup/nginx-config.tar.gz /etc/nginx
            sudo tar -cnz backup/ngnix-html.tar.gz /var/www/html ||  sudo tar -cnz backup/nginx
            ls -lh backup/
