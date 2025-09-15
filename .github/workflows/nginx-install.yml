@@ -26,3 +26,15 @@ jobs:
          run: |
           echo "checking ngnix status..."
           systemctl status ngnix | head -n 10
+       - name: Backup nginx
+         run: |
+           mkdir -p backup
+           sudo tar -cnz backup/ngnix-config.tar.gz /etc/ngnix
+           sudo tar -cnz backup/ngnix-html.tar.gz /var/www/html ||  sudo tar -cnz backup/nginx
+           ls -lh backup/
+
+       - name: Upload backup as artifact
+         uses: actions/upload-artifact@v3
+         with:
+            name: ngnix-backup
+            path: backup/
