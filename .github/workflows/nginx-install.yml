@@ -1,6 +1,7 @@
 name: Install nginx
 on:
-   push: ["main"]
+   push:
+      branches: ["main"]
 
 jobs:
    install-ngnix:
